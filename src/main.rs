@@ -7,6 +7,11 @@ fn main() {
     };
 
     user1.email = String::from("anotheremail@example.com");
+
+    let user2 = User {
+        email: String::from("another@example.com"),
+        ..user1
+    };
 }
 
 struct User {
