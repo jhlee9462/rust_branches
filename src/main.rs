@@ -9,5 +9,6 @@ fn main() {
 }
 
 fn area(demensions: (u32, u32)) -> u32 {
+    // 인덱스로 접근해야 하기 때문에 명시적이지 않다.
     demensions.0 * demensions.1
 }
