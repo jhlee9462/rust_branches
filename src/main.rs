@@ -1,9 +1,13 @@
 fn main() {
-    let black = Color(0, 0, 0);
-    let origin = Point(0, 0, 0);
-    let subject = AlwaysEqual;
+    let width1 = 30;
+    let height1 = 50;
+
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        area(width1, height1)
+    );
 }
 
-struct Color(i32, i32, i32);
-struct Point(i32, i32, i32);
-struct AlwaysEqual;
+fn area(width: u32, height: u32) -> u32 {
+    width * height
+}
