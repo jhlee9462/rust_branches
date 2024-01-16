@@ -17,7 +17,7 @@ fn main() {
     );
 
     // 구조체 출력하기
-    println!("rect1 is {:?}", rect1);
+    println!("rect1 is {:#?}", rect1);
 }
 
 fn area(demensions: &Rectangle) -> u32 {
