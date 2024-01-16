@@ -1,6 +1,13 @@
-fn main() {
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
 
-    let rect1 = (30, 50);
+fn main() {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
 
     println!(
         "The area of the rectangle is {} square pixels.",
@@ -8,7 +15,6 @@ fn main() {
     );
 }
 
-fn area(demensions: (u32, u32)) -> u32 {
-    // 인덱스로 접근해야 하기 때문에 명시적이지 않다.
-    demensions.0 * demensions.1
+fn area(demensions: Rectangle) -> u32 {
+    demensions.width * demensions.height
 }
