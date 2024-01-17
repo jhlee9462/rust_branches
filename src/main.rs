@@ -16,6 +16,9 @@ impl Rectangle {
     fn width(&self) -> u32 {
         self.width
     }
+}
+// impl 블록은 여러개로 쓸 수 있다.
+impl Rectangle {
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
