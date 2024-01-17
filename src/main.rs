@@ -12,6 +12,10 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+    // 필드와 동일한 이름의 메서드도 가능
+    fn width(&self) -> u32 {
+        self.width
+    }
 }
 
 fn main() {
@@ -24,4 +28,9 @@ fn main() {
     println!(
         "The area of the rectangle is {} square pixels.",
         rect1.area()
-    ); }
+    );
+
+    if rect1.width() > 0 {
+        println!("The rectangle has a nonzero width; it is {}", rect1.width);
+    }
+}
